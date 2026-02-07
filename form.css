@@ -20,6 +20,7 @@ body{
 }
 .form_container {
   
+  
 }
 .home_button {
   margin: 20px 10px;
@@ -79,7 +80,7 @@ body{
 }
 .form_container input, select, textarea{
   width: 200px;
-  padding: 5px;
+  padding: 7px;
   text-align: center;
   align-items: center;
   display: block;
@@ -91,23 +92,23 @@ body{
   margin: 10px 0px;
 }
 @media (max-width:767px) {
-  .form_container button{
- padding: 5px 20%;
-}
- .form_container legend{
-  font-size: 18px;
-}
- .form_container label{
-  font-size: 16px;
-  margin: 0px 100px 0px 0px;
-}
-.form_container div{
-  margin: 10px 0px;
+
+.form_container {
+  width: 60%;
 }
 }
-@media (max-width:500px) {
+@media (max-width:550px) {
 .home_button a{
-  font-size: 16px;
+  
+}
+.form_container {
+  width: 70%;
  
 }
+.form_container input, select, textarea{
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
 }
+}
+
