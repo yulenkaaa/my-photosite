@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Запис</title>
+</head>
+<link rel="stylesheet" href="form.css">
+<body>
+  <div class="wrapper">
+    <div class="wrapper_container">
+      <div class="home_button">
+        <a href="index.html">На головну</a>
+      </div>
+      <div class="form_container">
+      <form id="photoForm">
+        <fieldset>
+         <legend>Запис на фотосесію</legend>
+        <div>
+           <label>Ім'я та прізвище</label>
+           <input type="text" name="fullname" placeholder="Марія Коваль" required>
+        </div>
+        <div>
+           <label>Номер телефону</label>
+           <input type="tel" name="phone" placeholder="+49..." required>
+        </div>
+         <div>
+           <label>Зв'язок з Вами</label>
+           <input type="text" name="contact" placeholder="Email / Instagram / Telegram" required>
+        </div>   
+         <div>
+           <label>Тип фотосесії</label>
+            <select name="session" required>
+             <option value="" disabled selected>Оберіть</option>
+             <option value="Lifestyle">Lifestyle</option>
+             <option value="Love Story">Love Story</option>
+             <option value="Wedding">Wedding</option>
+             </select>
+           </div>
+           <div>
+            <label>Пакет</label>
+              <select name="package" required>
+                <option value="" disabled selected>Оберіть</option>
+                <option value="Базовий">Базовий</option>
+                <option value="Розширений">Розширений</option>
+                <option value="Повний">Повний</option>
+              </select>      
+           </div>
+        
+        
+        <div>
+          <label>Дата</label>
+          <input type="date" name="date" required>
+        </div>
+        
+         <div>
+          <label>Бажаний час</label>
+          <input type="time" name="time" required>
+         </div>    
+         <div>
+          <label>Коментар</label>
+          <textarea name="message" placeholder="Деталі, побажання"></textarea>
+         </div>
+
+        
+         <p id="status"></p>
+        <button type="submit">Надіслати</button>
+        
+        </fieldset>
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="form.js"></script>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(image/form_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: #fff;
+}
+.wrapper {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+
+.wrapper_container {
+}
+.form_container {
+  
+}
+.home_button {
+  margin: 20px 10px;
+}
+.home_button a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+}
+.home_button a:hover {
+  color: rgb(135, 133, 133);
+  transition: all 0.3s ease 0s;
+}
+.form_container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form_container button{
+ padding: 10px 30%;
+ border-radius: 20px;
+ font-size: 18px;
+ text-transform: uppercase;
+ border: 1px solid #000;
+ background-color: #fff;
+ color: #000;
+ cursor: pointer;
+ display: block;
+ margin: 0 auto;
+
+}
+.form_container button:hover{
+ background-color: #000;
+ color: #fff;
+ transition: all 0.3s ease 0s;
+ border: 1px solid #fff;
+ }
+ .form_container legend{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+ .form_container fieldset{
+  border-color: #fff;
+  margin-bottom: 15px;
+  
+}
+ .form_container label{
+  font-size: 18px;
+  margin: 0px 20px 0px 0px;
+  text-align: center;
+
+}
+.form_container input, select, textarea{
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  border: 1px solid #000;
+  border-radius: 10px;
+
+}
+.form_container div{
+  margin: 10px 0px;
+}
+@media (max-width:767px) {
+  .form_container button{
+ padding: 5px 20%;
+}
+ .form_container legend{
+  font-size: 18px;
+}
+ .form_container label{
+  font-size: 16px;
+  margin: 0px 100px 0px 0px;
+}
+.form_container div{
+  margin: 10px 0px;
+}
+}
+@media (max-width:500px) {
+.home_button a{
+  font-size: 16px;
+ 
+}
+}
