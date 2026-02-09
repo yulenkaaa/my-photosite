@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+</head>
+<link rel="stylesheet" href="form.css">
+<body>
+  <div class="wrapper">
+    <div class="wrapper_container">
+      <div class="home_button">
+        <a href="index_en.html">Home Page</a>
+      </div>
+      <div class="form_container">
+      <form id="photoForm">
+        <fieldset>
+         <legend>Book a Photoshoot</legend>
+        <div>
+           <label>Full Name</label>
+           <input type="text" name="fullname" placeholder="Maria Koval" required>
+        </div>
+        <div>
+           <label>Phone Number</label>
+           <input type="tel" name="phone" placeholder="+49..." required>
+        </div>
+         <div>
+           <label>Your Contact Info</label>
+           <input type="text" name="contact" placeholder="Email / Instagram / Telegram" required>
+        </div>   
+         <div>
+           <label>Type of Photoshoot</label>
+            <select name="session" required>
+             <option value="" disabled selected>Select</option>
+             <option value="Lifestyle">Lifestyle</option>
+             <option value="Love Story">Love Story</option>
+             <option value="Wedding">Wedding</option>
+             </select>
+           </div>
+           <div>
+            <label>Package</label>
+              <select name="package" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Базовий">Basic</option>
+                <option value="Розширений">Extended</option>
+                <option value="Повний">Full</option>
+              </select>      
+           </div>
+        
+        
+        <div>
+          <label>Date</label>
+          <input type="date" name="date" required>
+        </div>
+        
+         <div>
+          <label>Time</label>
+          <input type="time" name="time" required>
+         </div>    
+         <div>
+          <label>Comment</label>
+          <textarea name="message" placeholder="Any details or special requests"></textarea>
+         </div>
+
+        
+         <p id="status"></p>
+        <button type="submit">Send</button>
+        
+        </fieldset>
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="form_en.js"></script>
+</html>
